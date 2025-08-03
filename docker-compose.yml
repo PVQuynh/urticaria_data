@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+  minio_urticaria:
+    image: quay.io/minio/minio:RELEASE.2025-02-07T23-21-09Z
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=quynhpv
+      - MINIO_ROOT_PASSWORD=quynhphamvan2001
+    volumes:
+      - ./urticaria_data:/data
+    ports:
+      - 9010:9000
+      - 9011:9001
+    restart: always
+    networks:
+      - urticaria_network
+
+networks:
+  urticaria_network:
+    driver: bridge
