@@ -10,8 +10,19 @@ services:
     volumes:
       - ./urticaria_data:/data
     ports:
-      - 9010:9000
-      - 9011:9001
+      - 9100:9000
+      - 9101:9001
+    restart: always
+    networks:
+      - urticaria_network
+
+  urticaria_collector:
+    container_name: urticaria_collector
+    image: quynhpv/urticaria_data:v1
+    ports:
+      - 8180:8080
+    depends_on:
+      - minio_urticaria
     restart: always
     networks:
       - urticaria_network
