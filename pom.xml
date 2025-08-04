@@ -96,7 +96,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>quynhpv/${project.artifactId}:v2</image>
+						<image>quynhpv/${project.artifactId}:v7</image>
 					</to>
 				</configuration>
 			</plugin>

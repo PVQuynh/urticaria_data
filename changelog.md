@@ -9,3 +9,4 @@
 - chore: change config
 - chore: change docker compose
 - feat: health check
+- fix: internal host
