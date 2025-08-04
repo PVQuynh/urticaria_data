@@ -7,3 +7,5 @@
 ## 04-08-2025
 - feat: uploads a medical record file for a given user and record type
 - chore: change config
+- chore: change docker compose
+- feat: health check
